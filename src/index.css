@@ -1,0 +1,72 @@
+.checked {
+  text-decoration: line-through;
+}
+
+ul {
+  list-style: none;
+}
+
+label {
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+input[type="text"] {
+  width: 300px;
+  margin: 5px 5px 5px 5px;
+  background: rgb(255, 255, 255);
+}
+
+input[type="text"] :hover {
+  width: 300px;
+  margin: 5px 5px 5px 5px;
+}
+
+input[type="checkbox"] {
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-block;
+  padding: 5px 30px;
+  position: relative;
+  width: auto;
+}
+
+button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: #ccc;
+  border: 0.1px solid#93c47dff;
+  background-color: #93c47dff;
+  color: #fff;
+  border-radius: 3px;
+  margin: 5px 5px 5px 5px;
+}
+
+button:hover {
+  background: rgb(139, 187, 117);
+  border: 0.1px solid rgb(139, 187, 117);
+}
+
+button#sub {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: #ccc;
+  border: 0.1px solid rgb(121, 121, 121);
+  background-color: rgb(121, 121, 121);
+  color: #fff;
+  border-radius: 3px;
+  margin: 5px 5px 5px 5px;
+  float: right;
+}
+
+p#main {
+  margin: 50px 5px 5px 5px;
+}
+
+/* .c-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px #cbd6ee;
+  background: #474747;
+} */
