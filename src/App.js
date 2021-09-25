@@ -40,7 +40,6 @@ function App() {
       return sentence;
     });
     setSentence(changedSentences);
-    console.log("ちぇっくぼっくす" + JSON.stringify(changedSentences));
   };
 
   /**
@@ -48,13 +47,14 @@ function App() {
    * @param {number} id
    */
   const onClickShuffleButton = (sentences) => {
-    setSentence((sentences) => {
+    const changedSentences = (sentences)=>{
       for (let i = sentences.length - 1; i >= 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
         [sentences[i], sentences[j]] = [sentences[j], sentences[i]];
       }
-      return sentences;
-    });
+      return sentences; 
+    };
+    setSentence(changedSentences);
     console.log("ちぇんじ" + JSON.stringify(sentences));
   };
 
