@@ -46,13 +46,15 @@ function App() {
    * shuffleボタン押下時、sentences配列の順番をランダムに並び替える
    * @param {number} id
    */
+  const shuffleSetntence = ()=>{
+    for (let i = sentences.length - 1; i >= 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [sentences[i], sentences[j]] = [sentences[j], sentences[i]];
+    }
+  }
   const onClickShuffleButton = (sentences) => {
     const changedSentences = (sentences)=>{
-      for (let i = sentences.length - 1; i >= 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [sentences[i], sentences[j]] = [sentences[j], sentences[i]];
-      }
-      return sentences; 
+      return shuffleSetntence(sentences);
     };
     setSentence(changedSentences);
     console.log("ちぇんじ" + JSON.stringify(sentences));
