@@ -1,6 +1,7 @@
 # simple-react-todo
-
-todo react
+「苦しんで覚えるreact」という記事のサンプルコードをもとに
+コードを書く練習として作成しているアプリです
+https://zenn.dev/sadness_ojisan/books/introduction-of-react-introduction
 
 FYI: https://introduction-of-react-introduction-book.github.io/simple-react-todo/
 
