@@ -57,7 +57,7 @@ function App() {
       return shuffleSetntence(sentences);
     };
     setSentence(changedSentences);
-    console.log("ちぇんじ" + JSON.stringify(sentences));
+    //console.log("ちぇんじ" + JSON.stringify(sentences));
   };
 
   /**
