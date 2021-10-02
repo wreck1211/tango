@@ -52,7 +52,7 @@ function App() {
       [sentences[i], sentences[j]] = [sentences[j], sentences[i]];
     }
   }
-  const onClickShuffleButton = (sentences) => {
+  const onClickShuffleButton = () => {
     const changedSentences = (sentences)=>{
       return shuffleSetntence(sentences);
     };
